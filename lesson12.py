@@ -1,7 +1,6 @@
 def count_calls():
     global calls
     calls = calls + 1
-    return calls
 
 
 def string_info(stroka):
@@ -12,7 +11,6 @@ def string_info(stroka):
 
 def is_contains(string, list_to_search):
     count_calls()
-    st = ()
     z = False
     for i in list_to_search:
         i = i.upper()
