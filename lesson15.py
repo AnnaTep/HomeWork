@@ -1,13 +1,11 @@
 def single_root_words(root_word, *other_words):
     same_words = []
-    z = root_word.lower()
     for i in range(len(other_words)):
-        a = str(other_words[i].lower())
-        if z in other_words[i].lower():
-            same_words.append(a)
+        if root_word.lower() in other_words[i].lower():
+            same_words.append(str(other_words[i].lower()))
         else:
-            if other_words[i].lower() in z:
-                same_words.append(a)
+            if other_words[i].lower() in root_word.lower():
+                same_words.append(str(other_words[i].lower()))
             else:
                 continue
     return same_words
