@@ -6,7 +6,7 @@ def custom_write(file_name, strings):
     for i in strings:
         strings_number += 1
         strings_positions = file.tell()
-        slovar[i] = (strings_number, strings_positions)
+        slovar[(strings_number, strings_positions)]= i
         file.write(i+'\n')
     file.close()
     return slovar
